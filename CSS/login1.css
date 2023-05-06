@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    font-family: monospace;
+}
+.login,
+.registration{
+    position: absolute;
+    background-color: #eee;
+    box-shadow: 5px 5px 20px black;
+    width: 400px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 25px;
+    border-radius: 5px;
+}
+.registration{
+    height: 500px;
+}
+.login h1,
+.registration h1{
+    font-size: 35px;
+    margin-bottom: 0;
+}
+.login .logo img,
+.registration img{
+    width: 80px;
+    border-radius: 50%;
+}
+.login .user,
+.login .pass,
+.registration .user,
+.registration .pass,
+.registration .confirm_pass{
+    position: relative;
+}
+.login .user p,
+.login .pass p,
+.registration .user p,
+.registration .pass p,
+.registration .confirm_pass p{
+    position: absolute;
+    font-weight: bold;
+    font-size: large;
+    background-color: #eee;
+    padding: 0 5px;
+    border-radius: 20px;
+    transform: translate(90px,25px);
+}
+.login .user input,
+.login .pass input,
+.registration .user input,
+.registration .pass input,
+.registration .confirm_pass input{
+    padding: 0 10px;
+    width: 250px;
+    height: 35px;
+    border: 2px solid #20173E;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+.login .pass input,
+.registration .confirm_pass input{
+    margin-bottom: 25px;
+}
+.login .forgot_pass,
+.registration .forgot_pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .btn,
+.registration .btn{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.login .btn .btn_login{
+    margin-left: 60px;
+    background-color: #A6BB8D;
+    border-radius: 20px;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+.login .btn .btn_login,
+.login .btn .btn_registration,
+.registration .btn button{
+    border: none;
+}
+.login .btn a,
+.registration .btn a{
+    text-decoration: none;
+}
+.login .btn .btn_registration a{
+    color: black;
+}
+.login .btn .btn_login a,
+.registration .btn a{
+    color: white;
+}
+.registration .btn a{
+    background-color: #A6BB8D;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.registration{
+    display: none;
+}

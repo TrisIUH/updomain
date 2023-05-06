@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Boostrap/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <script src="../Boostrap/jquery-3.3.1.min.js"></script>
+    <script src="../Boostrap/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <title>Đăng kí</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="Home.html"><img src="../IMG/IMG-Logo/Untitled.png" alt="" width="90px" height="80px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../Home.html">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Sản phẩm
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../HTML/Item.html">Tất cả sản phẩm</a>
+                <a class="dropdown-item" href="../HTML/Subitem.html">Kính tròn</a>
+                <a class="dropdown-item" href="../HTML/Subitem2.html">Kính vuông</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/Login1.html">Đăng nhập</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="#" id="btnDK">Đăng kí</a></li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../HTML/gioithieu.html">Giới thiệu</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Đi</button>
+          </form>
+        </div>
+      </nav>
+        <div class="row justify-content-center">
+            <table class="table-bordered table-light table-primary table-hover table table-striped">
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th>Quê quán</th>
+                    <th>Email</th>
+                    <th>Điện thoại</th>
+                    <th>Ảnh khách hàng</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyen Phuc Thinh</td>
+                    <td>TIEN GIANG</td>
+                    <td>nptmustbeperfect@gmail.com</td>
+                    <td>0398154589</td>
+                    <td>Anhmoi</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 style="text-align: center;">THÔNG TIN CÁ NHÂN</h2>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                    <label for="">Họ tên </label>
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <input type="text" class="form-control" placeholder="Nhập họ tên" id="txtHT" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                </div>
+                                <div class="col-9 col-sm-9">
+                                    <span id="tbTen">*</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                    <label for="">Quê quán </label>
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <input type="text" id="txtQQ" class="form-control" placeholder="Nhập tỉnh của bạn">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <span id="tbQQ">*</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                    <label for="">Email </label>
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <input type="text" id="txtEmail" class="form-control" placeholder="Nhập email của bạn">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <span id="tbEmail">*</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                    <label for="">Số điện thoại </label>
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <input type="text" id="txtDT" class="form-control" placeholder="xxxx-xxx-xxx">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <span id="tbDT">*</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                    <label for="">Ảnh đại diện </label>
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <input type="file">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-sm-3">
+                                </div>
+                                <div class="col-6 col-sm-9">
+                                    <span id="tbAnh">*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-sm-12"><input type="button" value="Lưu" id="btnSave" class="btn btn-success btn-block"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #ddd;padding: 20px;">
+        <div style="display: flex;justify-content: space-around;">
+            <ul>
+              <li><a href="../HTML/Home.html">Trang chủ</a></li>
+              <li><a href="../HTML/Item.html">Tất cả sản phẩm</a></li>
+              <li><a href="../HTML/Subitem.html">Kính tròn</a></li>
+              <li><a href="../HTML/Subitem2.html">Kính vuông</a></li>
+              <li><a href="../HTML/Home.html">Danh sách thương hiệu</a></li>
+            </ul>
+            <ul>
+              <li><a href="../HTML/Item.html">Chi tiết</a></li>
+              <li><a href="../HTML/Item.html">Danh sách dịch vụ</a></li>
+              <li><a href="../HTML/Item.html">Thông tin shop</a></li>
+            </ul>
+            <ul>
+              <li><a href="../HTML/gioithieu.html">Hỗ trợ</a></li>
+              <li><a href="../HTML/gioithieu.html">Liên hệ</a></li>
+              <li><a href="../HTML/gioithieu.html">Các câu hỏi thường gặp</a></li>
+            </ul>
+            <ul>
+              <li><a href="../HTML/gioithieu.html">Contact us</a></li>
+              <li><a href="">SUY.VN@SUYDAYS.COM</a></li>
+            </ul>
+          </div>
+            <p style="text-align: center;">CopyRight &copy; SUYDAYS co,ltd ALL RIGHTS RESERVED</p>
+        </footer>
+</body>
+<script src="../JavaScript/Login.js"></script>
+</html>

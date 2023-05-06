@@ -1,0 +1,16 @@
+.mauDo {
+    font-size: 100%;
+    color: red;
+}
+
+[class *="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+span {
+    color: red;
+}
+td:first-child,th:first-child{
+    text-align: center;
+}
